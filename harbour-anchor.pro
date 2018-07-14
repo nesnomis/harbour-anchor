@@ -39,7 +39,8 @@ DISTFILES += qml/harbour-anchor.qml \
     qml/components/Magnetometer.qml \
     qml/pages/AboutPage.qml \
     translations/harbour-anchor-sv.ts \
-    qml/components/ScreenBlank.qml
+    qml/components/ScreenBlank.qml \
+    README.md
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172
 
