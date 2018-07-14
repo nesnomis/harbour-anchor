@@ -53,3 +53,4 @@ CONFIG += sailfishapp_i18n
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += translations/harbour-anchor-sv.ts
+TRANSLATIONS += translations/harbour-anchor-da.ts
