@@ -66,12 +66,6 @@ Dialog {
                 text: qsTr("Degrees")
                 description: qsTr("Show degrees in compass")
                 onCheckedChanged: {
-                    //checked ? showCompasNumbers = 0 : showCompasNumbers = 1
-                    //showCompasNumbers = activateNumbers.checked ? 1 : 0
-                    //activateNumbers.checked = !checked
-                   // aComp = !checked
-                   // aMag = checked
-                   // console.log("M ENABLED: "+aMagnetometer.enabled)
                 }
             }
             Label {
@@ -93,12 +87,38 @@ Dialog {
                 onValueChanged: aR = value
             }
 
+            Label {
+              //  id: sLabel
+                anchors.right: parent.right
+                anchors.rightMargin: Theme.paddingLarge
+                color: Theme.highlightColor
+                font.pixelSize: Theme.fontSizeLarge
+                text: qsTr("Anchor settings")
+            }
+
+            Separator {
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.rightMargin: Theme.paddingMedium
+                color: Theme.highlightColor
+            }
+            TextSwitch {
+                id: keepSon
+                width: parent.width
+                checked: keepScreenOn
+                enabled: true //aMagnetometer.running
+                text: qsTr("Prevent screensaver")
+                description: qsTr("Prevent screensaver when Anchor is active")
+            }
+
     }
+
     onAccepted: {
         activateNumbers.checked ? showCompasNumbers = 1 : showCompasNumbers = 0
-        settings.setSettingSetting(aComp,aMag,aR,showCompasNumbers)
-//        console.log("**** "+ aComp + " *** "+aMag+" *** "+aR+" *** "+showCompasNumbers)
+        var scron
+        keepSon.checked ? scron = 1 : scron = 0
+        keepScreenOn = keepSon.checked
+        settings.setSettingSetting(aComp,aMag,aR,showCompasNumbers,scron)
         anchorRadius = aR
-//        console.log(aCompass.enabled+" - "+aMagnetometer.enabled)
     }
 }

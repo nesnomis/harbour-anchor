@@ -35,10 +35,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Latitude &amp; Longitude</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Create anchor</source>
         <translation type="unfinished"></translation>
     </message>
@@ -48,6 +44,14 @@
     </message>
     <message>
         <source>Anchor description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit anchor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Latitude &amp; Longitude</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -110,10 +114,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Add anchor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Select anchor</source>
         <translation type="unfinished"></translation>
     </message>
@@ -125,15 +125,27 @@
         <source>Add an anchor</source>
         <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>EditAnchorsPage</name>
     <message>
-        <source>Deleting</source>
+        <source>Add current position</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Add custom position</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit current position</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ChooseAnchorsPage</name>
+    <message>
         <source>Anchors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -181,6 +193,18 @@
     </message>
     <message>
         <source>meters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Anchor settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Prevent screensaver</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Prevent screensaver when Anchor is active</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

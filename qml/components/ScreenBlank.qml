@@ -2,9 +2,9 @@ import QtQuick 2.0
 import Nemo.DBus 2.0
 
 Item {
-    property bool enabled: keepScreenOn
+    property bool enabled: keepScreenOn && Qt.application.active ? true : false
     function request(){
-        var method = "req_display"+(enabled?"":"_cancel")+"_blanking_pause";
+        var method = "req_display" + (enabled ? "" : "_cancel") + "_blanking_pause";
         console.log('screen blank:', enabled, method);
         dbif.call(method, [])
     }

@@ -8,8 +8,8 @@ GlassItem {
     id: dot
     width: Theme.paddingLarge * 2
     height: width
-    radius: dots === 1 ? 0.6 : 0 // 0 ? 0.2 : 0
-    falloffRadius: dots === 1 ? 0.65 : 3 // 0 ? 0.25 : 2
+    radius: dots == 1 ? 0.6 : 0 // 0 ? 0.2 : 0
+    falloffRadius: dots == 1 ? 0.65 : 3 // 0 ? 0.25 : 2
     color: Theme.highlightColor
     opacity: 0.1
     Timer {
@@ -19,7 +19,7 @@ GlassItem {
         repeat: true
         interval: 30
         onTriggered: {
-            if (opacity === 1){
+            if (opacity == 1){
                 up = false
             } else if (opacity < 0.5) {
                 up = true

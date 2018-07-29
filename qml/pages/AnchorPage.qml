@@ -15,6 +15,7 @@ Page {
         contentHeight: Screen.height
 
         PullDownMenu {
+            // pageStack.push(Qt.resolvedUrl("AddAnchorPage.qml"),{edit: true,newAnchor: false});
 
             MenuItem {
                 enabled: false//aGps.active
@@ -28,18 +29,31 @@ Page {
                 }
             }
 
+
             MenuItem {
                 enabled: aGps.active
-                text: qsTr("Add anchor")
-                onClicked: pageStack.push(Qt.resolvedUrl("AddAnchorPage.qml")),{lati: aGps.currentLatitude,longi: aGps.currentLongitude};//posTimer.running = true//pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
+                visible: aGps.active && anchorLatitude !=="" ? true : false
+                text: qsTr("Edit current position")
+                onClicked: pageStack.push(Qt.resolvedUrl("AddAnchorPage.qml"),{edit: true,newAnchor: false});
             }
-
+            MenuItem {
+                enabled: aGps.active
+                visible: aGps.active
+                text: qsTr("Add current position")
+                onClicked: pageStack.push(Qt.resolvedUrl("AddAnchorPage.qml"),{edit: false,newAnchor: false});//posTimer.running = true//pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
+            }
+            MenuItem {
+                enabled: true
+                text: qsTr("Add custom position")
+                onClicked: pageStack.push(Qt.resolvedUrl("AddAnchorPage.qml"),{edit: false,newAnchor: true});//posTimer.running = true//pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
+            }
             MenuItem {
                 enabled: true
                 text: qsTr("Select anchor")
-                onClicked: {pageStack.push(Qt.resolvedUrl("EditAnchorsPage.qml"))}
+                onClicked: {pageStack.push(Qt.resolvedUrl("ChooseAnchorsPage.qml"))}
             }
         }
+
 
         PushUpMenu {
             MenuItem {
@@ -192,7 +206,7 @@ Page {
 
                         onRunningChanged: if (!running) gpsconnect.opacity = 1
                         onTriggered: {
-                            if (gpsconnect.opacity === 1){
+                            if (gpsconnect.opacity == 1){
                                 up = false
                             } else if (gpsconnect.opacity < 0.5) {
                                 up = true

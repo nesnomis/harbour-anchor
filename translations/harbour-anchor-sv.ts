@@ -35,10 +35,6 @@
         <translation>Välj ikon</translation>
     </message>
     <message>
-        <source>Latitude &amp; Longitude</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Create anchor</source>
         <translation>Skapa ankare</translation>
     </message>
@@ -49,6 +45,14 @@
     <message>
         <source>Anchor description</source>
         <translation>Beskrivning på ankare</translation>
+    </message>
+    <message>
+        <source>Edit anchor</source>
+        <translation>Redigera ankare</translation>
+    </message>
+    <message>
+        <source>Latitude &amp; Longitude</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -110,10 +114,6 @@
         <translation>är en app av</translation>
     </message>
     <message>
-        <source>Add anchor</source>
-        <translation>Lägg till ankare</translation>
-    </message>
-    <message>
         <source>Select anchor</source>
         <translation>Välj ankare</translation>
     </message>
@@ -125,16 +125,28 @@
         <source>Add an anchor</source>
         <translation>Lägg till ankare</translation>
     </message>
+    <message>
+        <source>Add current position</source>
+        <translation>Lägg till nuvarande position</translation>
+    </message>
+    <message>
+        <source>Add custom position</source>
+        <translation>Lägg till egen position</translation>
+    </message>
+    <message>
+        <source>Edit current position</source>
+        <translation>Rediger nuvarande position</translation>
+    </message>
 </context>
 <context>
-    <name>EditAnchorsPage</name>
-    <message>
-        <source>Deleting</source>
-        <translation>Tar bort</translation>
-    </message>
+    <name>ChooseAnchorsPage</name>
     <message>
         <source>Anchors</source>
         <translation>Ankare</translation>
+    </message>
+    <message>
+        <source>Deleting</source>
+        <translation>Tar bort</translation>
     </message>
     <message>
         <source>Select anchor</source>
@@ -182,6 +194,18 @@
     <message>
         <source>meters</source>
         <translation>meter</translation>
+    </message>
+    <message>
+        <source>Anchor settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Prevent screensaver</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Prevent screensaver when Anchor is active</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

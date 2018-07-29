@@ -35,12 +35,8 @@
         <translation>Vælg ikon</translation>
     </message>
     <message>
-        <source>Latitude &amp; Longitude</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Create anchor</source>
-        <translation>Skab anker</translation>
+        <translation>Tilföj anker</translation>
     </message>
     <message>
         <source>Anchor name</source>
@@ -49,6 +45,14 @@
     <message>
         <source>Anchor description</source>
         <translation>Beskrivelse af anker</translation>
+    </message>
+    <message>
+        <source>Edit anchor</source>
+        <translation>Rediger anker</translation>
+    </message>
+    <message>
+        <source>Latitude &amp; Longitude</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -67,7 +71,7 @@
     </message>
     <message>
         <source>Disable GPS in app</source>
-        <translation>Sluk for GPS i appen</translation>
+        <translation>Deaktiver GPS i appen</translation>
     </message>
     <message>
         <source>Enable GPS in app</source>
@@ -110,10 +114,6 @@
         <translation>er en app af</translation>
     </message>
     <message>
-        <source>Add anchor</source>
-        <translation>Tilføj anker</translation>
-    </message>
-    <message>
         <source>Select anchor</source>
         <translation>Vælg anker</translation>
     </message>
@@ -125,20 +125,32 @@
         <source>Add an anchor</source>
         <translation>Tilføj et anker</translation>
     </message>
+    <message>
+        <source>Add current position</source>
+        <translation>Tilføj nuværende position</translation>
+    </message>
+    <message>
+        <source>Add custom position</source>
+        <translation>Tllføj brugerdefinieret position</translation>
+    </message>
+    <message>
+        <source>Edit current position</source>
+        <translation>Rediger nuværende position</translation>
+    </message>
 </context>
 <context>
-    <name>EditAnchorsPage</name>
-    <message>
-        <source>Deleting</source>
-        <translation>Sletter</translation>
-    </message>
+    <name>ChooseAnchorsPage</name>
     <message>
         <source>Anchors</source>
         <translation>Ankere</translation>
     </message>
     <message>
+        <source>Deleting</source>
+        <translation>Sletter</translation>
+    </message>
+    <message>
         <source>Select anchor</source>
-        <translation>Vælg et anker</translation>
+        <translation>Vælg anker</translation>
     </message>
     <message>
         <source>Edit anchor</source>
@@ -182,6 +194,18 @@
     <message>
         <source>meters</source>
         <translation>Meter</translation>
+    </message>
+    <message>
+        <source>Anchor settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Prevent screensaver</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Prevent screensaver when Anchor is active</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

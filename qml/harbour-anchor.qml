@@ -16,7 +16,9 @@ ApplicationWindow
     property variant dbModel: dbAnchors
     property int azimuth: aCompass.enabled ? 360 - aCompass.azimuth : 360 - aMagnetometer.azimuth
     property bool inact: false
-    property bool keepScreenOn: settings.getSettings("keepScreenOn",1) === 1 && Qt.application.active ? true : false
+    property bool keepScreenOn: settings.getSettings("keepScreenOn",0) == 1 ? true : false
+
+    //onKeepScreenOnChanged: console.log(" ---- **** KEEPSCREENALIVE: "+keepScreenOn)
 
     ListModel{id: dbAnchors}
 

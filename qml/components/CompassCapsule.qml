@@ -21,7 +21,7 @@ Item {
 
     Image {
         id: basePicture
-        source: showCompasNumbers ? "../images/compass_ring_base_black.png" : "../images/compass_ring_base_white.png"+Theme.highlightColor
+        source: showCompasNumbers ? "../images/compass_ring_base_black.png" : "../images/compass_ring_base_white.png"
         opacity: showCompasNumbers ? 0.7 : 0.5
         //visible: !aGps.enabled
         width: parent.width

@@ -30,7 +30,6 @@ DISTFILES += qml/harbour-anchor.qml \
     qml/components/Dot.qml \
     qml/pages/AnchorPage.qml \
     qml/pages/AddAnchorPage.qml \
-    qml/pages/EditAnchorsPage.qml \
     qml/components/Compass.qml \
     qml/components/CompassCapsule.qml \
     qml/components/Settings.qml \
@@ -40,7 +39,8 @@ DISTFILES += qml/harbour-anchor.qml \
     qml/pages/AboutPage.qml \
     translations/harbour-anchor-sv.ts \
     qml/components/ScreenBlank.qml \
-    README.md
+    README.md \
+    qml/pages/ChooseAnchorsPage.qml
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172
 

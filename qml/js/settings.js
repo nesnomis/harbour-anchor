@@ -18,6 +18,7 @@ function getValue(setting,def) {
              }
        })
     } catch (err) {
+        console.log("*** getValue ERROR ")
        res = def
     };
     console.log("*** getValue: "+res+" setting: "+setting)

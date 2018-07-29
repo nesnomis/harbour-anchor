@@ -34,21 +34,40 @@ Page {
                 MenuItem {
                     id:mlisten
                     text: qsTr("Select anchor")
-                    enabled: false
-              /*      onClicked: {
-                        internal ? ps(source) : model.id == 0 ? ps(source) : cps(model.id)
-                        radioStation = title
-                        if (icon == "0") picon = "../allradio-data/images/allradio.png"
-                        else if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                        else  picon = "../allradio-data/images/"+icon+".png";
-                        website = (Qt.resolvedUrl(site))
-                    } */
+                    //enabled: false
+                   onClicked: {
+                       aGps.enabled = true
+                       anchorIcon = icon
+                       anchorName = name
+                       anchorDescription = description
+                       anchorLatitude = latitude
+                       anchorLongitude = longitude
+                       settings.setSettings(latitude,longitude,icon,name,description)
+                       pageStack.navigateBack()                    }
                 }
 
                 MenuItem {
                     id:medit
                     text: qsTr("Edit anchor")
-                    enabled: false
+                    enabled: true
+
+                    onClicked: {
+                       // aGps.enabled = true
+                      //  anchorIcon = icon
+                      //  anchorName = name
+                      //  anchorDescription = description
+                        //anchorLatitude = latitude
+                        //anchorLongitude = longitude
+                        anchorIcon = icon
+                        anchorName = name
+                        anchorDescription = description
+                        anchorLatitude = latitude
+                        anchorLongitude = longitude
+                        settings.setSettings(latitude,longitude,icon,name,description)
+                        pageStack.push(Qt.resolvedUrl("AddAnchorPage.qml"),{edit: true,newAnchor: false});
+                        //settings.setSettings(anchorLatitude,anchorLatitude,anchorIcon,anchorName,anchorDescription)
+                        //pageStack.navigateBack()
+                    }
 
               //      onClicked: window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml"),
               //                                       {infotext: qsTr("Edit radio station"),titlfield: title,streamurlfield: source,homepagefield: site,sectionfield: section,oldsource: source})

@@ -30,6 +30,7 @@ Item {
     PositionSource {
         id: src
         active: enabled ? true : false
+        preferredPositioningMethods: PositionSource.AllPositioningMethods
 
         onPositionChanged: {
             var coord = src.position.coordinate;

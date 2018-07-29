@@ -17,6 +17,7 @@ Item {
     }
 
     function setSettings(slati,slongi,icon,name,description) {
+
         Settings.setValue("anchorLatitude",slati)
         Settings.setValue("anchorLongitude",slongi)
         Settings.setValue("anchorIcon",icon)
@@ -36,9 +37,14 @@ Item {
         return Settings.getValue(setting,def)
 
     }
-    function setSettingSetting(compass,magnet,radius,numbers) {
+    function setSetting(setting,value) {
+        Settings.setValue(setting,value)
+    }
+
+    function setSettingSetting(compass,magnet,radius,numbers,screenon) {
    //     Settings.setValue("compassSetting",compass)
    //     Settings.setValue("magnetometerSetting",magnet)
+        Settings.setValue("keepScreenOn",screenon)
         Settings.setValue("anchorRadius",radius)
         Settings.setValue("numbers",numbers)
     }
